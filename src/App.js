@@ -39,8 +39,6 @@ const EntrepriseForm = () => {
         phone,
         description,
         address,
-
-
       });
 
       console.log(response.data);
@@ -57,27 +55,27 @@ const EntrepriseForm = () => {
   return (
     <form onSubmit={handleSubmit}>
       <label>
-      name : 
+      Name : 
         <input type="text" value={name} onChange={handleNameChange} />
       </label>
       <br/>
       <label>
-        email : 
+        Email : 
         <input type="text" value={email} onChange={handleEmailChange} />
       </label>
       <br/>
       <label>
-        phone : 
+        Phone : 
         <input type="text" value={phone} onChange={handlePhoneChange} />
       </label>
       <br/>
       <label>
-        description : 
+        Description : 
         <input type="text" value={description} onChange={handleDescriptionChange} />
       </label>
       <br/>
       <label>
-        address : 
+        Address : 
         <input type="text" value={address} onChange={handleAddressChange} />
       </label>
       <br/>
