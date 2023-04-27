@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&family=Roboto:ital,wght@0,900;1,500;1,700;1,900&display=swap');
+body{
+    width: 100%;
+}
+.container{
+   background: url("../assets/ccircles.svg") center no-repeat; 
+    background-size:  auto 800px;
+    width:100%;
+    height:100Vh;
+}
+.form{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    
+    max-width: 521px;
+    height: 470px;
+    background-color: #fff;
+    border: 1px solid #707070;
+    border-radius: 42px;
+  
+   }
+.img{
+  margin-top: 19px;
+  width: 127px;
+height: 80px;
+display: inline;
+}
+.tit{
+    color: #000000;
+   
+font-family: 'Alkatra', cursive;
+
+font-style: "Alkatra";
+font-weight: bold;
+font-size: x-large;
+
+
+}
+
+.p{
+    font-style: italic;
+    padding: 0 25%;
+}
+.b{
+ height: 60px;
+    width: 80%;
+    background-image: linear-gradient(to right,#1DE8B8, #1DC5E7   );
+  color: white;
+  margin-top: 1rem;
+  margin-left: 3.2rem;
+  border: none;
+  border-radius: 20px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+
+.pas_recu{
+  font-size:small;
+padding: 5% 30%;
+}
+
+.ren{
+    color:#1DC5E7;
+    margin-left: 0.52rem;
+    border: none;
+    background: transparent;
+
+}
+.ren:hover{
+  cursor: pointer;
+}
+.flx{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    margin-top: 1.5rem;
+}
+.logo{
+    width:120px;
+    height:113px
+}
+.sign-switch-contianer{
+    position: absolute;
+    right: 2rem;
+    top: 1.85rem;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    background-color: #1DE8B8;
+    border-radius: 42px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  /* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1DE8B8;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #1DC5E7;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:focus + .slider {
+    box-shadow: 0 0 1px #1DC5E7;
+}
+input:checked + .slider:before  {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+.fa-sun-o{
+  position: absolute;
+  right: 4.5px;
+  top: 5px;
+  z-index: 1;
+  color: #1DC5E7  ;
+  cursor: pointer;
+  font-size: 24px;
+}
+.fa-moon-o {
+  content: "\f186";
+  position: absolute;
+  z-index: 1;
+  font-size: 24px;
+  top: 5px;
+  left: 4.5px;
+  color: #1DC5E7;
+  cursor: pointer;
+}
+  /* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}
+.headContianer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.dark-mode body {
+  background-color: #202224;
+}
+.dark-mode .container {
+  background-color: #202224;
+}
+.dark-mode  {
+    background-color: #202224;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+  }
+  .dark-mode .headContianer{
+    border-radius: 42px;
+ 
+  }
+  .dark-mode div{ background-color: transparent;
+    border-radius: 42px;
+  
+  }
+  .dark-mode p {
+    color: white;
+  }
+  .dark-mode div {
+    background-color: black;
+  }
+  .dark-mode .form {
+  border: 1px solid #707070;
+border-radius: 42px;
+  }
+  .dark-mode h1 {
+    color: #E4E4E4;
+  }
+  .dark-mode .mdpOublierbtnAnuuler {
+    background-color: rgb(67, 184, 237);
+    color: white;
+    border-color: transparent;
+  }
+  .dark-mode .tit {
+    color: white;
+  }
+@media  only screen and (max-width: 600px) {
+    .tit{ color: #000000;
+         font-size: 14px;
+        }
+.form{
+      height: 75%;
+      width: 90%;
+     }
+    .logo{
+        width:70px;
+        height:70px
+    }
+     .p{   font-size: 12px;
+        padding: 7px;
+    }
+    .b{
+      margin-left: 1rem;
+      font-size: 15px;
+      width: 70%;
+      height: 45px;
+    }
+
+    .sign-switch-contianer{
+        top:8px ;
+        right:25px;
+    }
+    .switch {
+   margin-bottom: 1rem;
+     
+  
+  }
+  }

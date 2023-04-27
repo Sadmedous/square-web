@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import EmailSend from "../src/components/EmailSend"
 
 const EntrepriseForm = () => {
   const [name, setName] = useState('');
@@ -122,8 +123,7 @@ const EntrepriseList = () => {
 const App = () => {
   return (
     <div>
-      <EntrepriseForm />
-      <EntrepriseList />
+      <EmailSend/>
     </div>
   );
 };
