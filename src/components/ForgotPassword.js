@@ -37,13 +37,13 @@ function ForgotPassword() {
             {color === "black" && (
               <img className={style["mdpOublierlogo"]} src={darkLogo} />
             )}
-            <h1 className={style["mdpOublierh1"]}>Mot De Passe Oublié?</h1>
+            <h1 className={style["mdpOublierh1"]}>Forgot password ?</h1>
+            <p className={style["mdpOublierP"]}>
+            Enter the email associated with your account and we will send you 
+            an email with instructions to reset your password.
+            </p>
           </div>
           <div className={style["theRestDiv"]}>
-            <p className={style["mdpOublierP"]}>
-              Entrez l'e-mail associé a votre compte et nous vous enverrons un
-              e-mail avec les instructions pour réintialiser votre mot de passe.
-            </p>
             <label className={style['email-place']}>
             <input
               type="email"
@@ -57,9 +57,9 @@ function ForgotPassword() {
             <button
               className={style["mdpOublierBtn"]}
             >
-              Réinitialiser le mot de passe
+              Reset password
             </button>
-            <button className={style["mdpOublierbtnAnuuler"]}>Annuler</button>
+            <button className={style["mdpOublierbtnAnuuler"]}>Cancel</button>
           </div>
         </div>
       </form>
