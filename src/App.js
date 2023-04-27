@@ -9,7 +9,7 @@ const App = () => {
     <div>
       {/* <EmailSend/> */}
       {/* <ForgotPassword/> */}
-      <EmailSend/>
+      <SignIn/>
     </div>
   );
 };

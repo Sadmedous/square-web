@@ -3,11 +3,12 @@ import style from '../../styles/auth.module.css';
 import squarelogo from  '../../assets/squarelogo.png';
 import squarelogolight from  '../../assets/squarelogolight.png';
 import { BsMoon,BsSun } from "react-icons/bs";
-import { FaRegEnvelope,FaRegEye } from "react-icons/fa";
+import { FaRegEnvelope,FaRegEye,FaRegEyeSlash } from "react-icons/fa";
 const intailState = {email:"",password:"",stayConnected:false};
 const SignIn = () => {
     const [color,setColor] = useState("white");
     const [info,setInfo] = useState(intailState);
+    const [show,setShow] =  useState(false);
     function switchMode(e) {
         const {checked} = e.target
         var element = document.body;
@@ -50,6 +51,7 @@ const SignIn = () => {
             alert(check);
         }
     }
+    const toggle = () =>setShow((prev)=>!prev)
   return (
     <div className={style['bg']}>
         <div className={style['circles-container']}>
@@ -73,18 +75,19 @@ const SignIn = () => {
                             <input type='email' name='email' onChange={onChange} placeholder='Votre e-mail' />
                         </div>
                         <div  className={style['form-wraper']}>
-                            <FaRegEye className={style['fa-eye']} />
-                            <input type='password' name='password' onChange={onChange} placeholder='Votre Mot de passe' />
+                            {show ?  <FaRegEye className={style['fa-eye']} onClick={toggle}  /> :<FaRegEyeSlash className={style['fa-eye']} onClick={toggle}  />}
+                            {/* {show ? 'text' : 'password'} */}
+                            <input type={show ? 'text' : 'password'} name='password' onChange={onChange} placeholder='Votre Mot de passe' />
                         </div>
                     </div>
                     <div className={style['sign-options']}>
                         <div className={style['sign-reste-checkbox']}>
-                            <label className={style["container"]}>Rester connecté
+                            <label className={style["container"]}>Stay connected
                                 <input type="checkbox" onChange={onChange} name='stayConnected'/>
                                 <span className={style["checkmark"]}></span>
                             </label>
                         </div>
-                        <a>Mot de passe oublié?</a>
+                        <a>Forgot your password?</a>
                     </div>
                     <div className={style['btn-container']}>
                          <button onClick={submit} className={style['sign-from-btn']}>
