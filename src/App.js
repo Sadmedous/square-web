@@ -8,8 +8,7 @@ const App = () => {
   return (
     <div>
       {/* <EmailSend/> */}
-      {/* <ForgotPassword/> */}
-      <EmailSend/>
+      <ForgotPassword/>
     </div>
   );
 };
