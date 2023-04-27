@@ -1,0 +1,354 @@
+.bg{
+    position: relative;
+    width: 100%;
+    height:100%;
+}
+body {
+    background-color: white;
+    color: black;
+  }
+  
+.dark-mode   {
+    background-color: #202224;
+    -webkit-transition: .6s;
+    transition: .6s;
+    color:white;
+   
+}
+.dark-mode .sing-from > .form-wraper > input {
+    background-color:#121212;
+    
+}
+.dark-mode .sign-container{
+    background-color:#121212;
+}
+.dark-mode #reset{
+    color:#707070;
+}
+.dark-mode label {
+    color:#707070;
+}
+
+.circles-container{
+    background: url('../assets/ccircles.svg') center no-repeat;
+    background-size:  auto 800px;
+    width:100%;
+    height:100Vh;
+}
+
+.sign-container{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    max-width: 521px;
+    height: 560px;
+    border: 1px solid #000000;
+    border-radius: 37px;
+}
+
+.sign-form-container{
+    position:relative; 
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100%;
+}
+.sign-form-header-container{
+    padding: 0px;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    margin-top: 0.75rem;
+    
+}
+.sign-logo{
+    width: 120px;
+    height: 113px;
+}
+.sign-from-header-container > h1{
+
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+}
+.sing-from{
+    padding: 5px;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    margin-top: 0.75rem;
+    width:100%;
+    height: auto;
+}
+.sing-from > .form-wraper > input {
+    border: 0;
+    background-color: white;
+    border-bottom: 1px solid #707070;
+    margin: 8px 10px;
+    outline: none;
+    width: 94%;
+    height: 50px;
+    padding: 10px 5px;
+
+}
+.form-wraper{
+    position: relative;
+    width:100%;
+
+}
+.fa-envelope,  .fa-eye{
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    font-size: 20px;
+    color: #707070;
+}
+
+.sign-options{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;  
+    width:100%;
+    height: auto;
+    padding:10px 2px;
+    color: #66686B;
+    font-size: 15px;
+}
+.sign-options > a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.sign-connecté-checkbox{
+    display: flex;
+    align-items: center;  
+    position: relative;
+    cursor: pointer;
+}
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: transparent;
+    border:3px solid #1DC5E7;
+    border-radius: 4px;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: transparent;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: transparent;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 4px;
+    top: 0px;
+    width: 5px;
+    height: 10px;
+    border: solid rgb(199, 199, 199);
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+.btn-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    width: 100%;
+
+}
+.sign-from-btn{
+    width: 80%;
+    height: 50px;
+    background-image: linear-gradient(to right,  #1DE8B8, #1DC5E7  );
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.sign-switch-contianer{
+    position: absolute;
+    right: 2rem; 
+    top: 1.85rem; 
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+  /* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1DE8B8;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #1DC5E7;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #1DC5E7;
+}
+  
+input:checked + .slider:before  {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+
+}
+    
+.fa-sun-o{
+    position: absolute; 
+    right: 4.5px;
+    top: 5px;
+    z-index: 1;
+    color: #1DC5E7  ;
+    cursor: pointer;
+    font-size: 24px;
+}
+.fa-moon-o {
+    content: "\f186";
+    position: absolute;
+    z-index: 1;
+    font-size: 24px;
+    top: 5px;
+    left: 4.5px;
+    color: #1DC5E7;
+    cursor: pointer;
+}
+  /* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+  
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .sign-container{
+        height: 600px;
+    }
+    .sign-switch-contianer{
+        top:3px;
+    }
+    .sign-form-container{
+        margin-top: 20px;
+    }
+    .sign-container{
+       margin: auto 0.8rem;
+    }
+    .btn-container{
+        margin-top: 5rem;
+    }
+    .sign-from-btn{
+        font-size: 15px;
+    }
+    .sign-options{
+        flex-wrap: wrap;
+        margin: 5px 10px;
+    }
+    .sign-from-header-containe {
+        margin-top: 1rem;
+        font-size: 20px;
+    }
+
+    .sign-logo{
+        width: 70px;
+        height: 70px;
+    }
+   
+    .sing-from > .form-wraper > input {
+        height: 50px;
+        padding: 2px;
+        margin: 3px 3px;
+    }
+    .fa-envelope,  .fa-eye{
+        right: 29px;
+        top: 25px;
+        font-size: 15px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .fa-envelope,  .fa-eye{
+        right: 29px;
+        top: 40px;
+        font-size: 15px;
+    }
+}
+

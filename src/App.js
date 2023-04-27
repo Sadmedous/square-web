@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-
+import SignIn from './components/auth/SignIn';
 const EntrepriseForm = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -121,10 +121,9 @@ const EntrepriseList = () => {
 
 const App = () => {
   return (
-    <div>
-      <EntrepriseForm />
-      <EntrepriseList />
-    </div>
+    <>
+      <SignIn />
+    </>
   );
 };
 
