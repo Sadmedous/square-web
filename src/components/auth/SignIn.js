@@ -41,11 +41,9 @@ const SignIn = () => {
             setInfo((prev)=>({...prev,[name]:value}));
         }
     }
-    console.log(info);
     const submit = async(e) =>{
         e.preventDefault();
         const check = checkform();
-        console.log(check);
         if (check === "succees") {
             
         } else {
