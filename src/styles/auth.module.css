@@ -17,6 +17,7 @@ body {
 }
 .dark-mode .sing-from > .form-wraper > input {
     background-color:#121212;
+    color: white;
     
 }
 .dark-mode .sign-container{
@@ -89,11 +90,11 @@ body {
     border: 0;
     background-color: white;
     border-bottom: 1px solid #707070;
-    margin: 8px 10px;
     outline: none;
-    width: 94%;
-    height: 50px;
-    padding: 10px 5px;
+    width: 90%;
+    margin: 1rem;
+    height: 10%;
+    padding: 10px;
 
 }
 .form-wraper{
@@ -102,13 +103,15 @@ body {
 
 }
 .fa-envelope,  .fa-eye{
+    font-size: 26px;
     position: absolute;
     right: 20px;
-    top: 40px;
-    font-size: 20px;
+    top: 15px;
     color: #707070;
 }
-
+.fa-eye{
+    cursor: pointer;
+}
 .sign-options{
     display: flex;
     justify-content: space-evenly;
@@ -135,7 +138,6 @@ body {
     display: block;
     position: relative;
     padding-left: 25px;
-    cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -158,6 +160,7 @@ body {
     left: 0;
     height: 15px;
     width: 15px;
+    cursor: pointer;
     background-color: transparent;
     border:3px solid #1DC5E7;
     border-radius: 4px;
@@ -191,7 +194,7 @@ body {
     top: 0px;
     width: 5px;
     height: 10px;
-    border: solid rgb(199, 199, 199);
+    border: solid #cacaca;
     border-width: 0 3px 3px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -298,7 +301,7 @@ input:checked + .slider:before  {
   
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
     .sign-container{
         height: 600px;
     }
@@ -334,21 +337,21 @@ input:checked + .slider:before  {
     .sing-from > .form-wraper > input {
         height: 50px;
         padding: 2px;
-        margin: 3px 3px;
+        margin: 3px 6px;
     }
     .fa-envelope,  .fa-eye{
-        right: 29px;
-        top: 25px;
-        font-size: 15px;
+        font-size: 20px;
+        right: 32px;
+        top: 20px;
     }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+/* @media only screen and (min-width: 600px) {
     .fa-envelope,  .fa-eye{
         right: 29px;
         top: 40px;
         font-size: 15px;
     }
-}
+} */
 

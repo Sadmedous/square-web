@@ -26,7 +26,7 @@ function EmailSend() {
             <label className={styles["switch"]}>
               <BsMoon className={styles["fa-moon-o"]} />
               <input type="checkbox" onChange={myFunction} />
-              <span className={styles["slider"]+" "+styles["round"]}></span>
+              <span className={`${styles["slider"]+styles["round"]}`}></span>
               <BsSun className={styles["fa-sun-o"]} />
             </label>
           </div>

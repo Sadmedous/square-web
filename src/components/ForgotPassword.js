@@ -24,10 +24,10 @@ function ForgotPassword() {
         <div className={style["divAllForm"]}>
           <div className={style["sign-switch-contianer"]}>
             <label className={style.switch}>
-            <BsMoon className={style["fa-moon-o"]} />
-                            <input type="checkbox" onChange={myFunction} />
-                            <span className={style.slider+" "+style.round}></span>
-            <BsSun className={style['fa-sun-o']} />
+              <BsMoon className={style["fa-moon-o"]} />
+              <input type="checkbox" onChange={myFunction} />
+              <span className={style.slider+" "+style.round}></span>
+              <BsSun className={style['fa-sun-o']} />
             </label>
           </div>
           <div className={style.header}>
