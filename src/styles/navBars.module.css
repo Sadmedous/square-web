@@ -1,0 +1,49 @@
+.nav-bar-container{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    z-index: 9999!important;
+    border-bottom: 1px solid #e9edf4;
+    background: #ffffff;
+    transition: padding-left .3s ease;
+}
+
+
+.nav-bar-fulid{
+    width: 100%;
+    padding:0rem 0.75rem;
+    margin:0px auto;
+}
+.container-fluid {
+    align-items: center!important;
+}
+
+
+
+.app-sidebar-toggle {
+    z-index: 1;
+    transition: padding-left .3s ease;
+    padding: 0 19px;
+    text-align: center;
+    font-size: 1.5rem;
+    position: relative;
+    right: 7px;
+}
+
+.side-bar-container{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    color: #282f53;
+    z-index: 99;
+    background: #fff;
+    width: 270px;
+    box-shadow: 0 8px 24px #a8b4d01a;
+    transition: left .45s ease,width .45s ease;
+    -o-transition: left .45s ease,width .45s ease;
+    border-right: 1px solid #e9edf4;
+}
