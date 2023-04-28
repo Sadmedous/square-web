@@ -9,8 +9,8 @@ const App = () => {
 
   return (
     <div>
-    
-      <SignIn/>
+      <NavBar/>
+      <SideNavBar/>
 
     </div>
   );
